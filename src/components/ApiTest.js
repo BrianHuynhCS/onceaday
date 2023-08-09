@@ -6,7 +6,7 @@ function ApiTest() {
 
     const handleTestClick = async () => {
         try {
-            const apiUrl = 'https://jsonplaceholder.typicode.com/posts/1';
+            const apiUrl = 'https://api.openai.com/v1';
             const apiResponse = await axios.get(apiUrl);
             setResponse(JSON.stringify(apiResponse.data, null, 2));
         } catch (error) {
