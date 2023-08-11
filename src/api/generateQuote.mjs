@@ -1,7 +1,6 @@
 const { API_KEY, API_BASE_URL } = require('./apiConfig.js');
 
-
-const generateGoal = async () => {
+const generateQuote = async () => {
   try {
   const response = await fetch(API_BASE_URL, {
     method:"POST",
@@ -11,7 +10,7 @@ const generateGoal = async () => {
     },
     body: JSON.stringify({
       model: "gpt-3.5-turbo",
-      messages: [{ role: "user", content: "Can you give me one goal to accomplish today?"}],
+      messages: [{ role: "user", content: "Can you give me the quote of the day?"}],
       temperature: 0.7
     }),
   });
@@ -25,7 +24,7 @@ const generateGoal = async () => {
 }};
 
 async function run(){
-  await generateGoal();
+  await generateQuote();
 }
 
 run();
