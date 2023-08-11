@@ -1,10 +1,9 @@
-import React from 'react';
-import ApiTest from './components/ApiTest';
+import Goal from './components/Goal';
 
 function App() {
   return (
     <div>
-      <ApiTest/>
+      <Goal/>
     </div>
   );
 }
