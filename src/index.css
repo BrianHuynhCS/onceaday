@@ -3,3 +3,7 @@
 @tailwind utilities;
 
 
+:root {
+    background-color: #A3A3FF;
+    color: black;
+}
