@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Home = ({ handleGetStartedClick }) => {
     return (
-        <div className='h-screen justify-center items-center flex flex-col'>
+        <div name='home' className='h-screen justify-center items-center flex flex-col'>
                 <div className='max-w-[1000px] text-center'>
                         <div className="animate-fade-up animate-ease-in">
                             

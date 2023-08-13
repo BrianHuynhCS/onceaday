@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Goal from './components/Goal';
@@ -8,9 +8,22 @@ import Quote from './components/Quote';
 
 function App() {
 
-  const [showNavbar, setShowNavbar] = useState(false);
+  const location = useLocation();
+  const [showNavbar, setShowNavbar] = useState(
+    localStorage.getItem("showNavbar") === true
+  );
 
-  const handleGetStartedClick = () => setShowNavbar(true);
+  const handleGetStartedClick = () => {
+    setShowNavbar(true);
+    localStorage.setItem("showNavbar", true);
+  };
+
+  useEffect(() => {
+    if (location.pathname !== "/") {
+      setShowNavbar(true);
+    }
+  }, [location.pathname])
+
 
   return (
     <div>
