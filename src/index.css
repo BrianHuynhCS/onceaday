@@ -2,8 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Preahvihear&display=swap');
+
 
 :root {
     background-color: #A3A3FF;
-    color: black;
+    color: black;   
+
+}
+
+body {
+    font-family: 'Preahvihear', sans-serif;
+}
+
+.active-nav {
+    border: 2px;
 }
