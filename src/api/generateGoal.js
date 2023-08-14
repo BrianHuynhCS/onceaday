@@ -12,7 +12,7 @@ const generateGoal = async () => {
       model: "gpt-3.5-turbo",
       messages: [{ role: "user", content: "Can you give me one goal to accomplish today? Give me a response that is at most two sentences."}],
       max_tokens: 50,
-      temperature: 2
+      temperature: 1
     }),
   });
 
