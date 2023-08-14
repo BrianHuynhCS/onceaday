@@ -10,7 +10,8 @@ const generateFood = async () => {
     },
     body: JSON.stringify({
       model: "gpt-3.5-turbo",
-      messages: [{ role: "user", content: "Can you pick for me a cultural food to eat?. Give me at most a two sentence response."}]
+      messages: [{ role: "user", content: "Can you pick for me a cultural food to eat? Give me a response that is at most two sentences."}],
+      temperature: 2
     }),
   });
 

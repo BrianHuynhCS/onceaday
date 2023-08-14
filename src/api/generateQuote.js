@@ -10,7 +10,8 @@ const generateQuote = async () => {
     },
     body: JSON.stringify({
       model: "gpt-3.5-turbo",
-      messages: [{ role: "user", content: "Can you give me the quote of the day? Give me at most a two setence response."}]
+      messages: [{ role: "user", content: "Can you give me the quote of the day? Give me a response that is at most two sentences."}],
+      temperature: 2
     }),
   });
 
