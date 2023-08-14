@@ -24,4 +24,4 @@ const generateGoal = async () => {
   return "Error generating food."
 }};
 
-module.exports = generateGoal;
+export default generateGoal;
