@@ -24,6 +24,7 @@ const Goal = () => {
 
     return (
         <div name='goal' className='w-full h-screen flex flex-col items-center justify-center'>
+            <div></div>
             <div className='animate-bounce animate-thrice animate-ease-in-out'>
                 <Planet size={150} mood="blissful" color="#FDA7DC" />
             </div>
@@ -38,6 +39,7 @@ const Goal = () => {
             <div className='text-center px-8 pt-8'>
                 <p id='resultText'>{generatedText}</p>
             </div>
+            
         </div>
     )
 }

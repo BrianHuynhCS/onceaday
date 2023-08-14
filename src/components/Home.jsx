@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Home = ({ handleGetStartedClick }) => {
     return (
         <div name='home' className='h-screen justify-center items-center flex flex-col'>
-                <div className='max-w-[1000px] text-center'>
+                <div className='max-w-[1000px] text-center px-8'>
                         <div className="animate-fade-up animate-ease-in">
                             
                             <p className='text-3xl'>Do you ever feel like your days are like a routine?</p>
