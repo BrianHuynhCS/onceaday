@@ -23,4 +23,4 @@ const generateQuote = async () => {
   return "Error generating goal."
 }};
 
-module.exports = generateQuote;
+export default generateQuote;
