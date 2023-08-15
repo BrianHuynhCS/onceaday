@@ -4,8 +4,9 @@ import { Link, useLocation } from 'react-router-dom';
 const Navbar = () => {
     const location = useLocation();
     return (
-        <div className='fixed w-full h-[300px] flex justify-center items-center px-8'>
-            <ul className='text-2xl flex gap-20'>
+        <div className='fixed w-full h-[200px] flex justify-center items-center px-4'>
+
+            <ul className='text-2xl flex gap-14'>
                 <li>
                     <Link to="/goal" className={location.pathname === "/goal" ? 'border-2 border-black p-3' : ''}>Goal</Link>
                 </li>

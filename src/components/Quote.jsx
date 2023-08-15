@@ -24,8 +24,8 @@ const Quote = () => {
 
     return (
         <div name='quote' className='w-full h-screen flex flex-col items-center justify-center'>
-            <div className='animate-bounce animate-thrice animate-ease-in-out'>
-            <SpeechBubble size={150} mood="happy" color="#83D1FB" />
+            <div className='animate-bounce animate-once animate-ease-in-out pt-8'>
+            <SpeechBubble size={120} mood="happy" color="#83D1FB" />
             </div>
             <div className='pt-8'>
                 <p>Get the quote of the day!</p>
@@ -35,7 +35,7 @@ const Quote = () => {
                     {isFetching ? <Ring /> : 'Generate'}
                 </button>
             </div>
-            <div className='text-center px-8 pt-8'>
+            <div className='text-center px-8 pt-8 min-h-[100px]'>
                 <p id='resultText'>{generatedText}</p>
             </div>
         </div>

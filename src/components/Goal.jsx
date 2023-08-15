@@ -25,8 +25,8 @@ const Goal = () => {
     return (
         <div name='goal' className='w-full h-screen flex flex-col items-center justify-center'>
             <div></div>
-            <div className='animate-bounce animate-thrice animate-ease-in-out'>
-                <Planet size={150} mood="blissful" color="#FDA7DC" />
+            <div className='animate-bounce animate-once animate-ease-in-out pt-8'>
+                <Planet size={130} mood="blissful" color="#FDA7DC" />
             </div>
             <div className='pt-8'>
                 <p>Start your daily goal!</p>
@@ -36,7 +36,7 @@ const Goal = () => {
                     {isFetching ? <Ring /> : 'Generate'}
                 </button>
             </div>
-            <div className='text-center px-8 pt-8'>
+            <div className='text-center px-8 pt-8 min-h-[100px]'>
                 <p id='resultText'>{generatedText}</p>
             </div>
             

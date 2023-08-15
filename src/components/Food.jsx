@@ -24,8 +24,8 @@ const Food = () => {
 
     return (
         <div name='' className='w-full h-screen flex flex-col items-center justify-center'>
-            <div className='animate-bounce animate-thrice animate-ease-in-out'>
-                <Mug size={120} mood="happy" color="#A6E191" />
+            <div className='animate-bounce animate-once animate-ease-in-out pt-8'>
+                <Mug size={110} mood="happy" color="#A6E191" />
             </div>
             <div className='pt-8'>
                 <p>Figure out what to eat!</p>
@@ -35,7 +35,7 @@ const Food = () => {
                     {isFetching ? <Ring /> : 'Generate'}
                 </button>
             </div>
-            <div className='text-center px-8 pt-8'>
+            <div className='text-center px-8 pt-8 min-h-[100px]'>
                 <p id='resultText'>{generatedText}</p>
             </div>
         </div>
