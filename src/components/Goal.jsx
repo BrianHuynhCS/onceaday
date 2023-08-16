@@ -18,14 +18,14 @@ const Goal = () => {
                 setGeneratedText(generatedGoal);
             }, 2000);
         } catch (error) {
+            setIsFetching(false);
             setGeneratedText("An error occurred. Please try again.");
         }
     }
 
     return (
         <div name='goal' className='w-full h-screen flex flex-col items-center justify-center'>
-            <div></div>
-            <div className='animate-bounce animate-once animate-ease-in-out pt-8'>
+            <div className={`${isFetching ? 'animate-bounce animate-infinite' : ''} pt-8`}>
                 <Planet size={130} mood="blissful" color="#FDA7DC" />
             </div>
             <div className='pt-8'>

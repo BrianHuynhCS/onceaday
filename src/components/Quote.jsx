@@ -24,7 +24,7 @@ const Quote = () => {
 
     return (
         <div name='quote' className='w-full h-screen flex flex-col items-center justify-center'>
-            <div className='animate-bounce animate-once animate-ease-in-out pt-8'>
+            <div className={`${isFetching ? 'animate-bounce animate-infinite' : ''} pt-8`}>
             <SpeechBubble size={120} mood="happy" color="#83D1FB" />
             </div>
             <div className='pt-8'>

@@ -24,7 +24,7 @@ const Food = () => {
 
     return (
         <div name='' className='w-full h-screen flex flex-col items-center justify-center'>
-            <div className='animate-bounce animate-once animate-ease-in-out pt-8'>
+            <div className={`${isFetching ? 'animate-bounce animate-infinite' : ''} pt-8`}>
                 <Mug size={110} mood="happy" color="#A6E191" />
             </div>
             <div className='pt-8'>
